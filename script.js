@@ -1,11 +1,24 @@
-document.addEverntListener('DOMContentLoaded',function()){
+document.addEverntListener('DOMContentLoaded',function(){
     const aumentaFonteBotão = document.getElementById('aumentar-fonte');
     const diminuiFonteBotao = document.getElementById('diminuir-fonte');
 
     let tamanhoAtualFonte = 1;
-    aumentaFonteBotão.addEventListener('click', function){
+    aumentaFonteBotão.addEventListener('click', function(){
         tamanhoAtualFonte+= 0.1;
-        document.body.s
+        document.body.style.fontSize='${tamanhoAtualFonte}rem';
 
-    }
-}
+    });
+
+    diminuiFonteBotao.addEventListener('click',function(){
+        tamanhoAtualFonte-= 0.1;
+        document.body.style.fontSize = '${tamanhoAtualFonte}rem';
+    });
+
+    const botaoDeAcessibilidade = document.getElementById('botao-acessibilidade')
+    const opcoesDeAcessibilidade = document.getElementById('opcoes-acessibilidade')
+
+    botaoDeAcessibilidade.addEventListener('click', function (){
+        botaoDeAcessibilidade.classList.toggle('rotacao-botao');
+        opcoesDeAcessibilidade.classList.toggle('apresenta-lista')
+       })
+});
