@@ -9,17 +9,24 @@
                 <header class=" p-5">
                     
                     <nav class="container d-flex justify-content-between align-items-center" >
-                        <img src="tropicalia.jpg" class="nav-img" loading="lazy">
+                        <img src="0.jpg" class="nav-img" loading="lazy">
                         <ul class="nav mt-5">
                             <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
                             <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
                             <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
                         </ul>
-                            <div id="acessibilidade">
-                                <button id="botao-acessibilidade" class="btn btn-primary">acessibilidade</button>
-                                <button id="aumentar-fonte" class="btn btn-primary fw-bold">A+</button>
-                                <button id="diminuir-fonte" class="btn btn-primary fw-bold">A-</button>
+                        <div id="acessibilidade" class="menu-acessibilidade">
+                            <button id="botao-acessibilidade" class="btn btn-primary fw-bold
+                            rotacao-botao" arial-expanded="false">acessibilidade</button>
+                            <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                                <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar
+                                o tamanho da fonte">A+</button>
+                                <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="Diminuir
+                                o tamanho da fonte">A-</button>
+                                <button id="alterna-contraste" class="btn btn-primary fw-bold"> <i class="bi
+                                bi-shadows"></i></button>
                             </div>
+                        </div>
                     </nav>
             </header>
 
@@ -29,19 +36,19 @@
         <div class="inicio-fundo d-flex justify-content-between align-items-center">
             <div class="esquerda-conteudo">
                 <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
-                <img src="img1.webp" alt="mb-3" width="563"
+                <img src="05.jpg" alt="mb-3" width="563"
                     height="278" loading="lazy">
                 <a href="#tropicalia"
                         class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero conhecer!</a>
                 <div>
-                <img src="Os_Mutantes__restored_-removebg-preview.png" alt="A imagem apresenta o grupo musical Os Mutantes. São três pessoas cantando em dois microfones" title="Os Mutantes - CC0 Domínio Público / Acervo Arquivo Nacional" class="img-fluid img-inicio">
+                <img src="02.png" alt="A imagem apresenta o grupo musical Os Mutantes. São três pessoas cantando em dois microfones" title="Os Mutantes - CC0 Domínio Público / Acervo Arquivo Nacional" class="img-fluid img-inicio">
             </div>
     </section>
 
     <section id="tropicalia" class="mr-5 pt-6 secao-tropicalia">
         <div class="container d-flex align-items-center ">
             <div class="col-04 d-flex align-items-center">
-                    <img src="ibagem" alt="rounded-pill" alt="" width="273" height="331" loading="lazy">
+                    <img src="01.jpg" alt="rounded-pill" alt="" width="273" height="331" loading="lazy">
             </div>
              <div class="col-05">
                 <h2>O que foi a Tropicália</h2>
@@ -53,23 +60,16 @@
         </div>
     </section>
 
-    <section id="galeria">
+    <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
         <h2 class="text-center pt-5">Galeria</h2>
-        <div class="container p-3 mt-3 fundo-galeria">
-
-                <div class="row justify-content-md-center">
-                        <div class="col-md-4">
-                                <img src="931px-Jorge_Ben_e_o_Trio_Mocotó_no_Teatro_da_Lagoa,_1971.jpg"
-                                        class="img-fluid rounded-5" loading="lazy">
-                        </div>
-                        <div class="col-md-4">
-                                <img src="lossy-page1-640px-Os_Mutantes_2.tif.jpg" class="img-fluid rounded-5"
+        <div class="container p-3 mt-3 fu
+        ScrollReveal().reveal('#inicio', { delay: 500 });="03.jpg" class="img-fluid rounded-5"
                                         loading="lazy">
                         </div>
                 </div>
                 <div class="row mt-4 justify-content-md-center">
                         <div class="col-md-4">
-                                <img src="lossy-page1-170px-Gilberto_Gil,_nos_anos_1960_2.tif.jpg" class="img-fluid rounded-5" loading="lazy">
+                                <img src="04.jpg" class="img-fluid rounded-5" loading="lazy">
                         </div>
                         <div class="col-md-4">
                                 <img src="lossy-page1-1199px-Caetano_Veloso_no_III_Festi.width-800.jpg"
@@ -79,6 +79,6 @@
          </div>
 </section>
 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>    
 </body>
 </html>
-
